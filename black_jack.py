@@ -1,23 +1,26 @@
-cartas = { 
-    chr(0x1f0a1): 11, 
-    chr(0x1f0a2): 2, 
-    chr(0x1f0a3): 3, 
-    chr(0x1f0a4): 4, 
-    chr(0x1f0a5): 5, 
-    chr(0x1f0a6): 6, 
-    chr(0x1f0a7): 7, 
-    chr(0x1f0a8): 8, 
-    chr(0x1f0a9): 9, 
-    chr(0x1f0aa): 10, 
-    chr(0x1f0ab): 10, 
-    chr(0x1f0ad): 10, 
-    chr(0x1f0ae): 10, 
+cartas = {
+    chr(0x1f0a1): 11,
+    chr(0x1f0a2): 2,
+    chr(0x1f0a3): 3,
+    chr(0x1f0a4): 4,
+    chr(0x1f0a5): 5,
+    chr(0x1f0a6): 6,
+    chr(0x1f0a7): 7,
+    chr(0x1f0a8): 8,
+    chr(0x1f0a9): 9,
+    chr(0x1f0aa): 10,
+    chr(0x1f0ab): 10,
+    chr(0x1f0ad): 10,
+    chr(0x1f0ae): 10,
 }
 print("***"*5, "\n")
 print ("BLACK JACK", "\n")
 print("***"*5, "\n")
+#VALOR DE CADA CARTA
+print("Cartas disponibles: {}".format(cartas.keys()))
+print("Valor correspondiente de las cartas: {}".format(list(cartas.values())))
+#LISTA CON PUNTOS CARTAS
 print ("1. Valor de cada carta:")
-for carta in cartas:
-    print(carta, ":", cartas[carta])
-print("2. Lista de cartas:")
-
+for clave, valor in cartas.items():
+    print(clave, ": ", valor)
+#JUGADOR DOS CARTAS AL AZAR
