@@ -31,7 +31,7 @@ def banca_azar():
     return puntuacion_banca, carta_banca
 puntuacion_banca, carta_banca = banca_azar()
 puntuacion_banca2, carta_banca2 = banca_azar()
-#JUGADOR DOS CARTAS AL AZAR
+#JUGADOR DOS CARTAS AL AZAR Y LLAMAR FUNCIÓN BANCA
 print("Bienvenido al juego de Black Jack")
 import random
 carta_jugador = random.choice(list(cartas.keys()))
